@@ -1,0 +1,129 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+#root header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+#root header .needHelp {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#root .formCont {
+  width: 400px;
+}
+#root .formCont form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#root .formCont form h1 {
+  margin-bottom: 16px;
+}
+#root .formCont form .newUser {
+  margin-bottom: 20px;
+}
+#root .formCont form .newUser a {
+  color: #00A76F;
+}
+#root .formCont form .input-group {
+  position: relative;
+}
+#root .formCont form .input-group .input {
+  width: 100%;
+  padding: 16px 14px;
+  border: solid 1.5px rgba(145, 158, 171, 0.2);
+  border-radius: 10px;
+  background: none;
+  color: #212B36;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+}
+#root .formCont form .input-group .showPass, #root .formCont form .input-group .hidePass {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: #637381;
+}
+#root .formCont form .input-group .showPass:hover, #root .formCont form .input-group .hidePass:hover {
+  color: #000;
+}
+#root .formCont form .input-group .hidePass {
+  display: none;
+}
+#root .formCont form .input-group .user-label {
+  position: absolute;
+  left: 15px;
+  color: #637381;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+}
+#root .formCont form .input-group .input:focus,
+#root .formCont form .input-group input:valid {
+  outline: none;
+  border: 1.5px solid rgba(145, 158, 171, 0.2);
+}
+#root .formCont form .input-group .input:focus ~ label,
+#root .formCont form .input-group input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #fff;
+  color: #637381;
+}
+#root .formCont form .forgotPassword {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+#root .formCont form .forgotPassword a {
+  color: #212B36;
+  text-decoration: underline;
+  font-size: 14px;
+}
+#root .formCont form .btn-group {
+  width: 100%;
+}
+#root .formCont form .btn-group button {
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(33, 43, 54);
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+}
+#root .formCont form .loginOr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#root .formCont form .loginOr .line {
+  width: 45%;
+  height: 1px;
+  border-bottom: 1px dashed rgb(145, 158, 171);
+}
+#root .formCont form .loginOr p {
+  color: rgb(145, 158, 171);
+}
+#root .formCont form .socialIconsCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}/*# sourceMappingURL=signupForm.css.map */

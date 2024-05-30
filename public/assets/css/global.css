@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-family: "Public Sans", sans-serif;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src:url("./public/fonts/PublicSans-VariableFont_wght.ttf") format("truetype"), url('./public/fonts/PublicSans-Italic-VariableFont_wght.ttf')
+    format("truetype");
+        font-weight: normal; /* Обычное начертание */
+        font-style: normal; /* Обычный стиль */
+}
+
+button{
+    cursor: pointer;
+}
+
+.searchCont>input:focus{
+border-bottom: 1px solid #39cd8b !important;
+}
